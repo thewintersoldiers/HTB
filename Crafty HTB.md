@@ -67,7 +67,7 @@ After installing all the dependencies, initiate the Minecraft client to connect 
 ```
 
 
-![Pasted image 20240219014106](assets/305748071-4da6c36b-eff9-4e46-a0cb-d1741d5e92ee.png)
+![Pasted image 20240219014106](assets/305748026-1b82343a-5382-4ebf-a837-fb68fb639ac1.png)
 
 (Note: Press enter when it prompts for a password, as in setting no password. Input server IP (HTB target IP), and we should be connected to the server)
 
@@ -105,20 +105,20 @@ After sending this command, we receive a reverse shell on our netcat listener. W
 
 
 
-![Pasted image 20240219014236](HTB\assets\305748026-1b82343a-5382-4ebf-a837-fb68fb639ac1.png)
+![Pasted image 20240219014236](assets/305748059-5a973019-ccc2-4b26-81bd-b357e640c3ae.png)
 
 
 We can do a few checks on the system to view files, assessable directories, and current privileges.
 
-![Pasted image 20240219014403](HTB\assets\305748059-5a973019-ccc2-4b26-81bd-b357e640c3ae.png)
+![Pasted image 20240219014403](assets/305748062-1f010d2e-032c-4ef0-ad3a-976925de537b.png)
 
 
 We've got foothold as a service account `crafty\svc_minecraft` and landed in a Minecraft service directory `C:\users\svc_minecraft\server` . Viewing the files and paths for the Minecraft service hosted, we see few JAR files, and one of them is in the `\plugins` path.
 
-![Pasted image 20240219021701](HTB\assets\305748062-1f010d2e-032c-4ef0-ad3a-976925de537b.png)
+![Pasted image 20240219021701](assets/305748066-6f8ec5d2-1d82-4bbc-baa5-c4881133289e.png)
 
 
-![Pasted image 20240219021648](HTB\assets\305748066-6f8ec5d2-1d82-4bbc-baa5-c4881133289e.png)
+![Pasted image 20240219021648](assets/305748071-4da6c36b-eff9-4e46-a0cb-d1741d5e92ee.png)
 
 
 We need to retrieve those files and check what all data we can get.
