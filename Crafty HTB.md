@@ -67,7 +67,7 @@ After installing all the dependencies, initiate the Minecraft client to connect 
 ```
 
 
-![Pasted image 20240219014106](assets\305748071-4da6c36b-eff9-4e46-a0cb-d1741d5e92ee.png)
+![Pasted image 20240219014106](assets/305748071-4da6c36b-eff9-4e46-a0cb-d1741d5e92ee.png)
 
 (Note: Press enter when it prompts for a password, as in setting no password. Input server IP (HTB target IP), and we should be connected to the server)
 
